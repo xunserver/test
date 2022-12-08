@@ -44,8 +44,9 @@ jobs:
       # Run Linter against code base #
       ################################
       - uses: actions/setup-node@v3
-      with:
-        node-version: 18
-        cache: 'npm'
-    - run: npm ci
-    - run: npm run lint
+        with:
+          node-version: 18
+          cache: 'npm'
+          
+      - run: npm ci
+      - run: npm run lint
